@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/pointing.js"></script>
+    <link rel="icon" type="image/x-icon" href="/img/logoMic.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Clockwise</title>
+</head>
+<body>
+    <!-- WEBSITE HEADER -->
+    <header>
+        <nav class="header-nav">
+            <div class="header-container">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div class="divider"></div>
+                
+                <a href="./index.html" aria-label="Clockwise - Home" class="logo"><img class="logo-img" src="./img/logoName.png" alt="Logo"/></a>
+           
+            </div>
+        </nav>
+    </header>
+    <div>
+        <section class="sidebar close">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class="bx bx-home-alt icon"></i>
+                            <span class="text-sidebar home-sidebar nav--text-sidebar">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="employees.html">
+                            <i class='bx bxs-user-rectangle icon'></i>
+                            <span class="text-sidebar employees-sidebar nav--text-sidebar">Employees</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <main>
+        <div class="overlay"></div>
+        <div class="name-header">
+            <h1 id="employee-name">Employee name: <span id="employee-name-title"></span></h1>
+        </div>
+        <div class="table">
+            <table id="table">
+                <thead>
+                    <tr id="first-row-header">
+                        <th id="month-year" colspan="9">Date</th>
+                        <th id="change-date" colspan="3">
+                            <input type="month" id="month-input" name="month">
+                            <button id="change-date-button">Change Date</button>
+                        </th>
+                    </tr>
+                    <tr id="sub-header">
+                        <th>Day</th>
+                        <th>Date</th>
+                        <th>IN</th>
+                        <th>OUT</th>
+                        <th>Total AM</th>
+                        <th>Lunch</th>
+                        <th>IN</th>
+                        <th>OUT</th>
+                        <th>Total PM</th>
+                        <th>Extra Break</th>
+                        <th>Actual Time</th>
+                        <th>Holiday/Day Off</th>
+                    </tr>                    
+                </thead>
+                <tbody id="pointing-table-body">
+                    <tr></tr>
+                </tbody>
+            </table>    
+                   
+        </div>
+        <div class="total-month-time">
+            <h3 id="total-time">Total: 0:00</h3>
+        </div> 
+    </main>
+</body>
+</html>
